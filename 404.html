@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyanno · Mali müşavirler için WhatsApp asistanı</title>
+<meta name="description" content="Beyanno: mali müşavirler için WhatsApp asistanı. Luca verinizle mükellef sorularını yanıtlar. Çok yakında.">
+<link rel="canonical" href="https://beyanno.com/">
+<meta property="og:title" content="Beyanno · yakında">
+<meta property="og:description" content="Mali müşavirler için WhatsApp asistanı. Luca verinizle mükellef sorularını yanıtlar.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,700..900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  /* 21 Eki 2026: beyanno.com "yakında" sayfası (Patron onayı). Marka: tabela siyahı + amber LED. Uygulama hazır olunca uygulama/dist bu depoya gelecek (hash yönlendirme #/). */
+  :root { --bg:#16181D; --panel:#1F2229; --fg:#F4F1EA; --mute:#A7ABB4; --line:#2E323B; --led:#FFB000; --led-soft:rgba(255,176,0,.12); }
+  * { box-sizing:border-box; }
+  html, body { margin:0; min-height:100%; }
+  body { background:var(--bg); color:var(--fg); font-family:"Plus Jakarta Sans",system-ui,sans-serif; display:flex; flex-direction:column; min-height:100vh; padding:0 16px; }
+  main { flex:1; display:flex; flex-direction:column; justify-content:center; max-width:720px; width:100%; margin:0 auto; padding:56px 0 40px; }
+  .tabela { align-self:flex-start; display:inline-flex; align-items:center; gap:10px; background:#0E0F12; border:1px solid var(--line); border-radius:12px; padding:10px 16px; font-family:"Space Mono",monospace; font-weight:700; letter-spacing:.14em; color:var(--led); font-size:.9rem; text-shadow:0 0 12px rgba(255,176,0,.55); }
+  .nokta { width:8px; height:8px; border-radius:50%; background:var(--led); box-shadow:0 0 10px var(--led); animation:yan 1.6s ease-in-out infinite; }
+  @keyframes yan { 50% { opacity:.25; } }
+  @media (prefers-reduced-motion: reduce) { .nokta { animation:none; } }
+  h1 { font-family:"Archivo",sans-serif; font-stretch:78%; font-weight:900; font-size:clamp(2.6rem,10vw,4.6rem); line-height:.98; margin:28px 0 18px; letter-spacing:-.01em; }
+  h1 span { color:var(--led); }
+  .alt { font-size:clamp(1.1rem,3.6vw,1.35rem); line-height:1.5; color:var(--fg); margin:0 0 10px; font-weight:600; }
+  .acik { color:var(--mute); line-height:1.65; margin:0 0 32px; max-width:560px; }
+  .ozellik { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:0 0 36px; padding:0; list-style:none; }
+  .ozellik li { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px; line-height:1.5; }
+  .ozellik b { display:block; color:var(--led); font-family:"Space Mono",monospace; font-size:.78rem; letter-spacing:.1em; margin-bottom:6px; }
+  .iletisim { display:inline-flex; align-items:center; gap:10px; align-self:flex-start; padding:14px 20px; border-radius:12px; background:var(--led); color:#16181D; font-weight:700; text-decoration:none; }
+  .iletisim:hover, .iletisim:focus-visible { filter:brightness(1.08); outline:2px solid var(--fg); outline-offset:3px; }
+  footer { max-width:720px; width:100%; margin:0 auto; padding:20px 0 28px; border-top:1px solid var(--line); color:var(--mute); font-size:.9rem; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  footer a { color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+  <div class="tabela"><span class="nokta" aria-hidden="true"></span>BEYANNO · YAKINDA</div>
+  <h1>Mükellef soruları,<br><span>WhatsApp'ta</span> yanıtlansın.</h1>
+  <p class="alt">Mali müşavirler için WhatsApp asistanı.</p>
+  <p class="acik">Beyanno, Luca'daki verinizle mükelleflerinizin sık sorduğu soruları WhatsApp üzerinden yanıtlar; siz yalnız gerçekten sizin bakmanız gereken konularla ilgilenirsiniz.</p>
+  <ul class="ozellik">
+    <li><b>WHATSAPP</b>Mükellefleriniz alışkın oldukları kanaldan yazar.</li>
+    <li><b>LUCA VERİSİ</b>Yanıtlar sizin kayıtlarınıza dayanır.</li>
+    <li><b>KONTROL SİZDE</b>Gerekli konular size yönlendirilir.</li>
+  </ul>
+  <a class="iletisim" href="mailto:info@beyanno.com">Bilgi: info@beyanno.com</a>
+</main>
+<footer>
+  <span>© 2026 Beyanno</span>
+  <span>Bir <a href="https://dijitabela.com/" rel="noopener">Dijitabela</a> ürünüdür</span>
+</footer>
+</body>
+</html>
